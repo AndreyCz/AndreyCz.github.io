@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-main: #1d1c24;
+    --color-secondary: #2a2931;
+    --color-tertiary: #f4f4f4;
+    --color-accent: #cd6e15;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*::selection {
+    background-color: #cd6e153c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-tertiary);
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+section {
+    padding: 5%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    font-family: 'Montserrat Alternates';
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px var(--color-accent);
+}
+
+.paragraph {
+    line-height: 25px;
+}
+
+.accent {
+    color: var(--color-accent);
+}
+
+/* ----- header ----- */
+/* ----- header ----- */
+/* ----- header ----- */
+
+.header {
+    background: linear-gradient(to bottom, #1d1c2400, 30%, #1d1c24),
+        url(../img/almos-bechtold-GFgWx3o8bTI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header .right {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 0;
+}
+
+.header .title {
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-align: center;
+    text-shadow: none;
+}
+
+.header .title .accent {
+    text-shadow: 0 0 20px var(--color-accent);
+}
+
+.header i {
+    color: var(--color-accent);
+}
+
+.header .more-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-tertiary);
+    padding: .5rem 3rem;
+    border-radius: 10px;
+}
+
+.header .more-btn:hover{
+    background-color: var(--color-secondary);
+    transition: .3s;
+}
+
+/* ----- topics ----- */
+/* ----- topics ----- */
+/* ----- topics ----- */
+
+.topics {
+    height: max-content;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.topics .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.topics .list-group-item i {
+    color: var(--color-accent);
+}
+
+.topics .list-group-item a {
+    font-family: 'Montserrat Alternates';
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem 0 .5rem .2rem;
+    color: var(--color-accent);
+    text-shadow: 0 0 20px var(--color-accent);
+}
+
+.topics .list-group-item a:hover{
+    color: var(--color-accent);
+
+}
+
+.topics .list-group-item h5 {
+    color: var(--color-tertiary);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: .5rem 0 .5rem 1rem;
+}
+
+.topics .list-group-item h6 {
+    color: var(--color-tertiary);
+    letter-spacing: 1px;
+    margin: .5rem 0 .5rem 2rem;
+}
+
+.topics .list-group-item i {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    margin: 0 .2rem 0 0;
+}
+
+/* ----- introduction ----- */
+/* ----- introduction ----- */
+/* ----- introduction ----- */
+
+.wave1,
+.wave2 {
+    background-color: var(--color-secondary);
+}
+
+.introduction {
+    background-color: var(--color-secondary);
+    flex-direction: column;
+    height: 100%;
+    padding: 5% 5% 0;
+}
+
+.introduction .title {
+    font-size: 2rem;
+}
+
+.introduction .paragraph {
+    width: 70%;
+    margin: 1rem 0 3rem;
+}
+
+.btnDown {
+    background-color: var(--color-main);
+    color: var(--color-tertiary);
+    outline: 2px solid var(--color-tertiary);
+    padding: 1rem;
+
+    font-size: .8rem;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnDown:hover {
+    color: var(--color-accent);
+    outline: 2px solid var(--color-accent);
+    box-shadow: 0 0 20px var(--color-accent);
+
+
+    transition: .3s;
+}
+
+/* ----- carousel ----- */
+/* ----- carousel ----- */
+/* ----- carousel ----- */
+
+.sectionCarousel {
+    height: 100vh;
+
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sectionCarousel .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.sectionCarousel .container {
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.sectionCarousel .paragraph {
+    line-height: 25px;
+    color: var(--color-light-gray);
+    font-weight: 400;
+    width: 70%;
+    margin: 10px auto 15px;
+}
+
+.sectionCarousel .slider-icon {
+    font-size: 25px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+}
+
+.sectionCarousel .fa-chevron-left,
+.sectionCarousel .fa-chevron-right {
+    color: var(--color-tertiary);
+    background: var(--color-secondary);
+    font-size: 1.1rem;
+    width: 3rem;
+    height: 3.5rem;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+
+.sectionCarousel .fa-chevron-left:hover,
+.sectionCarousel .fa-chevron-right:hover {
+    color: var(--color-accent);
+
+}
+
+.sectionCarousel .carousel-indicators button {
+    cursor: pointer;
+    border: 0;
+    width: 1.3rem;
+    height: .18rem;
+    border-radius: 20px;
+    margin: 1rem .2rem 0;
+}
+
+.sectionCarousel .carousel-indicators button.active {
+    background-color: var(--color-accent);
+    box-shadow: 0 0 20px var(--color-accent);
+}
+
+/* ----- development ----- */
+/* ----- development ----- */
+/* ----- development ----- */
+
+.development .title {
+    font-size: 2rem;
+    text-align: left;
+    margin: 1rem 0 1.5rem 5rem;
+
+    white-space: pre-line;
+    line-height: 1rem;
+}
+
+.development .years {
+    font-size: .8rem;
+    text-shadow: none;
+}
+
+.development .paragraph {
+    text-align: left;
+    margin: 0 0 0 5rem;
+}
+
+
+.development .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.development .right img {
+    /* width: auto;
+    height: 15rem; */
+    border-radius: 15px;
+    margin: 0 5rem 0 0;
+
+    object-fit: cover;
+}
+
+.development .right .img4 {
+    width: 100%;
+    height: 13rem;
+    object-position: top;
+}
+
+/* ----- section tabs ----- */
+/* ----- section tabs ----- */
+/* ----- section tabs ----- */
+
+.sectionTabs {
+    padding: 2rem 0;
+
+    flex-direction: column;
+    gap: 3rem;
+
+    min-height: 120vh;
+    /* max-height: 100vh; */
+
+    background-color: var(--color-secondary);
+}
+
+.sectionTabs .paragraph {
+    margin: 0;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectionTabs .accent {
+    font-weight: 600;
+}
+
+.sectionTabs .nav-tabs {
+    border: 0;
+    margin: 0 0 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.sectionTabs .nav-tabs .nav-link {
+    border: 2px solid var(--color-tertiary);
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem;
+}
+
+.sectionTabs .nav-tabs .nav-link.active {
+    border: 2px solid var(--color-accent);
+    background-color: var(--color-accent);
+    box-shadow: 0 0 20px var(--color-accent);
+}
+
+.sectionTabs .nav-tabs .nav-link:hover {
+    border: 2px solid var(--color-accent);
+    transition: .3s;
+}
+
+.sectionTabs .nav-tabs .nav-link h3 {
+    font-family: 'Montserrat Alternates';
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 35px;
+    color: var(--color-tertiary);
+    letter-spacing: 1px;
+}
+
+.sectionTabs .tab-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sectionTabs .tab-pane h4 {
+    font-family: 'Montserrat Alternates';
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-accent);
+}
+
+.sectionTabs .tab-pane .list-group-item h5 {
+    font-family: 'Montserrat Alternates';
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-tertiary);
+}
+
+.sectionTabs .tab-pane .list-group-item .paragraph {
+    margin: .5rem 0 0;
+    width: 100%;
+    text-align: left;
+}
+
+.sectionTabs .tab-pane .list-group-item {
+    background-color: var(--color-main);
+    color: var(--color-tertiary);
+    border: none;
+    margin: 5px 0;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.sectionTabs .tab-pane .list-group-item i {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    margin: 0 .5rem 0 0;
+}
+
+.sectionTabs .tab-pane .col-img {
+    display: flex;
+    align-items: center;
+}
+
+.sectionTabs .tab-pane img {
+    border-radius: 15px;
+    width: 20rem;
+    max-height: 27rem;
+    object-fit: cover;
+}
+
+/* ----- sectionVideo ----- */
+/* ----- sectionVideo ----- */
+/* ----- sectionVideo ----- */
+
+.sectionVideo {
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 5rem 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sectionVideo iframe {
+    border-radius: 15px;
+}
+
+/* ----- conclusion ----- */
+/* ----- conclusion ----- */
+/* ----- conclusion ----- */
+
+.conclusion {
+    flex-direction: column;
+    gap: 1rem;
+
+    background: linear-gradient(to top, #1d1c2400, 20%, #1d1c24),
+        url(../img/joshua-newton-8z9pi6GgOo4-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.conclusion .title {
+    color: var(--color-accent);
+    font-weight: 700;
+    /* font-size: 4.5rem; */
+    align-self: flex-start;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.conclusion .paragraph {
+    width: 70%;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header{
+        background-position: left;
+    }
+    .conclusion{
+        background-position: left;
+        height: 50vh;
+    }
+
+    .introduction {
+        text-align: left;
+    }
+
+    .introduction .paragraph,
+    .conclusion .paragraph,
+    .conclusion .title {
+        width: 100%;
+    }
+
+    .sectionCarousel .paragraph {
+        width: 100%;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .development .title,
+    .development .paragraph,
+    .development .right img {
+        margin: 1rem 0;
+    }
+
+    .development .title {
+        line-height: 2rem;
+    }
+
+    .sectionVideo {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .sectionVideo .btnDown{
+        display: none;
+    }
+
+    .sectionTabs,
+    .sectionCarousel{
+        height: max-content;
+    }
+
+    .sectionTabs{
+        padding: 5rem 0 3rem 0;
+
+    }
+
+    .sectionCarousel{
+        padding: 2rem 0 5rem 0;
+    }
+
+    .sectionTabs .nav-tabs{
+        margin: 0;
+    }
+
+    .sectionTabs .title{
+        padding: 2rem 0 0;
+        margin: 0;
+    }
+
+    .sectionTabs .col-img{
+        justify-content: center;
+    }
+}
